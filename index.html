@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flores El Patroncito | Florería Artesanal — Ramos, Bodas y Arreglos a Domicilio</title>
+  <meta name="description" content="Flores El Patroncito: ramos de rosas, arreglos para bodas, cumpleaños y toda ocasión, hechos a mano con flores frescas. Entrega el mismo día. Pide por WhatsApp.">
+  <meta name="keywords" content="florería, flores a domicilio, ramos de rosas, arreglos florales, flores para bodas, flores para cumpleaños, Flores El Patroncito, entrega de flores el mismo día">
+  <meta name="author" content="Flores El Patroncito">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Flores El Patroncito | Florería Artesanal">
+  <meta property="og:description" content="Ramos y arreglos florales hechos a mano, con flores frescas y entrega el mismo día. El detalle floral que enamora.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:image" content="imagenes/flores-el-patroncito-equipo.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B8%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ LOADING SCREEN ============ -->
+  <div id="loading-screen" aria-hidden="true">
+    <div class="loader-panel loader-panel--left"></div>
+    <div class="loader-panel loader-panel--right"></div>
+    <div class="loader-inner">
+      <div class="loader-mark">
+        <svg viewBox="0 0 100 100" class="loader-flower" aria-hidden="true">
+          <circle cx="50" cy="50" r="47" class="badge-ring-fill" />
+          <circle cx="50" cy="50" r="47" fill="none" class="badge-ring-stroke" stroke-width="3" />
+          <circle cx="50" cy="50" r="39" fill="none" class="badge-ring-stroke" stroke-width="1" opacity=".5" />
+          <g class="loader-petals">
+            <path d="M50 10 L57 34 L50 40 L43 34 Z" />
+            <path d="M50 10 L57 34 L50 40 L43 34 Z" transform="rotate(60 50 50)" />
+            <path d="M50 10 L57 34 L50 40 L43 34 Z" transform="rotate(120 50 50)" />
+            <path d="M50 10 L57 34 L50 40 L43 34 Z" transform="rotate(180 50 50)" />
+            <path d="M50 10 L57 34 L50 40 L43 34 Z" transform="rotate(240 50 50)" />
+            <path d="M50 10 L57 34 L50 40 L43 34 Z" transform="rotate(300 50 50)" />
+          </g>
+          <circle cx="50" cy="50" r="8" class="loader-center" />
+        </svg>
+      </div>
+      <p class="loader-wordmark">Flores <em>El Patroncito</em></p>
+      <p class="loader-text">Preparando tu ramo<span class="loader-dots"><span>.</span><span>.</span><span>.</span></span></p>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Flores El Patroncito — Inicio">
+        <svg viewBox="0 0 100 100" class="brand-mark" aria-hidden="true">
+          <circle cx="50" cy="50" r="47" class="badge-ring-fill" />
+          <circle cx="50" cy="50" r="47" fill="none" class="badge-ring-stroke" stroke-width="3" />
+          <circle cx="50" cy="50" r="39" fill="none" class="badge-ring-stroke" stroke-width="1" opacity=".5" />
+          <g class="badge-petals">
+            <path d="M50 10 L57 34 L50 40 L43 34 Z" />
+            <path d="M50 10 L57 34 L50 40 L43 34 Z" transform="rotate(60 50 50)" />
+            <path d="M50 10 L57 34 L50 40 L43 34 Z" transform="rotate(120 50 50)" />
+            <path d="M50 10 L57 34 L50 40 L43 34 Z" transform="rotate(180 50 50)" />
+            <path d="M50 10 L57 34 L50 40 L43 34 Z" transform="rotate(240 50 50)" />
+            <path d="M50 10 L57 34 L50 40 L43 34 Z" transform="rotate(300 50 50)" />
+          </g>
+          <circle cx="50" cy="50" r="8" class="badge-center" />
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">Flores <em>El Patroncito</em></span>
+          <span class="brand-tagline">Florería Artesanal · A la Norteña</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <a href="https://wa.me/5215555555555?text=Hola%20Flores%20El%20Patroncito%2C%20me%20gustar%C3%ADa%20pedir%20un%20arreglo%20floral" target="_blank" rel="noopener" class="btn btn-primary btn-nav">
+          <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 5.75 2.38 8.07 8.07 0 0 1 2.38 5.73c0 4.48-3.65 8.12-8.14 8.12a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.12.82.83-3.04-.19-.31a8.06 8.06 0 0 1-1.24-4.31c0-4.48 3.65-8.09 8.16-8.09m-4.48 4.19c-.15 0-.4.06-.6.28-.21.23-.8.77-.8 1.89s.82 2.2.93 2.35c.11.15 1.6 2.5 3.95 3.44 1.94.79 2.35.63 2.77.6.42-.04 1.36-.55 1.55-1.09.19-.53.19-.99.13-1.09-.06-.09-.21-.15-.44-.26-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.52.11-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.96-.35-1.83-1.13-.68-.6-1.13-1.35-1.27-1.58-.13-.23-.01-.35.1-.47.11-.11.23-.27.35-.4.11-.14.15-.24.23-.4.08-.15.04-.3-.02-.42-.06-.11-.52-1.28-.72-1.74-.19-.46-.38-.4-.52-.4Z"/></svg>
+          Pedir por WhatsApp
+        </a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=1920&q=80" alt="Ramo de tulipanes rosas recién armado, luz natural, estilo Flores El Patroncito" class="hero-bg-img" loading="eager">
+        <div class="hero-media-overlay"></div>
+      </div>
+      <canvas id="particles-canvas" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <p class="eyebrow reveal" data-reveal>Flores El Patroncito — Florería a la Norteña</p>
+
+        <h1 class="hero-title reveal" data-reveal>
+          <span class="gradient-text">Flores con carácter,</span><br>
+          entregadas con <em class="hero-italic">palabra</em>.
+        </h1>
+
+        <p class="hero-typewriter reveal" data-reveal>
+          Especialistas en <span class="typewriter-word" id="typewriter"></span><span class="typewriter-cursor">|</span>
+        </p>
+
+        <p class="hero-desc reveal" data-reveal>
+          En Flores El Patroncito armamos cada ramo con el mismo orgullo con el que se hacen las cosas en el Norte: a mano, sin rodeos y con carácter. Flores frescas y entrega puntual — porque cuando decimos que llega, llega.
+        </p>
+
+        <div class="hero-cta reveal" data-reveal>
+          <a href="https://wa.me/5215555555555?text=Hola%20Flores%20El%20Patroncito%2C%20me%20gustar%C3%ADa%20pedir%20un%20arreglo%20floral" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+            <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 5.75 2.38 8.07 8.07 0 0 1 2.38 5.73c0 4.48-3.65 8.12-8.14 8.12a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.12.82.83-3.04-.19-.31a8.06 8.06 0 0 1-1.24-4.31c0-4.48 3.65-8.09 8.16-8.09m-4.48 4.19c-.15 0-.4.06-.6.28-.21.23-.8.77-.8 1.89s.82 2.2.93 2.35c.11.15 1.6 2.5 3.95 3.44 1.94.79 2.35.63 2.77.6.42-.04 1.36-.55 1.55-1.09.19-.53.19-.99.13-1.09-.06-.09-.21-.15-.44-.26-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.52.11-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.96-.35-1.83-1.13-.68-.6-1.13-1.35-1.27-1.58-.13-.23-.01-.35.1-.47.11-.11.23-.27.35-.4.11-.14.15-.24.23-.4.08-.15.04-.3-.02-.42-.06-.11-.52-1.28-.72-1.74-.19-.46-.38-.4-.52-.4Z"/></svg>
+            Pedir por WhatsApp
+          </a>
+          <a href="#servicios" class="btn btn-outline btn-lg">Ver Catálogo de Flores</a>
+        </div>
+
+        <ul class="hero-trust reveal" data-reveal>
+          <li><span class="hero-trust-icon">🌸</span> Flores 100% frescas</li>
+          <li><span class="hero-trust-icon">🚚</span> Entrega puntual, sin pretextos</li>
+          <li><span class="hero-trust-icon">🤝</span> Hecho a mano, con palabra de honor</li>
+        </ul>
+
+        <div class="hero-social reveal" data-reveal>
+          <span class="hero-social-label">Síguenos</span>
+          <div class="social-links">
+            <a href="#" aria-label="Flores El Patroncito en Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5H16l.5-3H13.5V8.3c0-.9.3-1.5 1.6-1.5H16.6V4.2C16.3 4.2 15.3 4 14.2 4c-2.3 0-3.9 1.4-3.9 4v2.5H8v3h2.3V21Z"/></svg>
+            </a>
+            <a href="#" aria-label="Flores El Patroncito en Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c2.7 0 3.1 0 4.1.06 1.1.05 1.8.22 2.5.47.7.27 1.2.6 1.8 1.15.5.5.9 1.1 1.1 1.8.25.7.42 1.4.47 2.5.06 1 .06 1.4.06 4.1s0 3.1-.06 4.1c-.05 1.1-.22 1.8-.47 2.5-.27.7-.6 1.2-1.15 1.8a4.9 4.9 0 0 1-1.8 1.1c-.7.25-1.4.42-2.5.47-1 .06-1.4.06-4.1.06s-3.1 0-4.1-.06c-1.1-.05-1.8-.22-2.5-.47a4.9 4.9 0 0 1-1.8-1.15 4.9 4.9 0 0 1-1.1-1.8c-.25-.7-.42-1.4-.47-2.5C2 15.1 2 14.7 2 12s0-3.1.06-4.1c.05-1.1.22-1.8.47-2.5.27-.7.6-1.2 1.15-1.8.5-.5 1.1-.9 1.8-1.1.7-.25 1.4-.42 2.5-.47C8.9 2 9.3 2 12 2Zm0 2c-2.65 0-2.98 0-4.03.06-.86.04-1.33.18-1.64.3-.42.16-.72.35-1.03.66-.31.31-.5.61-.66 1.03-.12.31-.26.78-.3 1.64C4.28 9.02 4.28 9.35 4.28 12s0 2.98.06 4.03c.04.86.18 1.33.3 1.64.16.42.35.72.66 1.03.31.31.61.5 1.03.66.31.12.78.26 1.64.3 1.05.06 1.38.06 4.03.06s2.98 0 4.03-.06c.86-.04 1.33-.18 1.64-.3.42-.16.72-.35 1.03-.66.31-.31.5-.61.66-1.03.12-.31.26-.78.3-1.64.06-1.05.06-1.38.06-4.03s0-2.98-.06-4.03c-.04-.86-.18-1.33-.3-1.64a2.8 2.8 0 0 0-.66-1.03 2.8 2.8 0 0 0-1.03-.66c-.31-.12-.78-.26-1.64-.3C14.98 4 14.65 4 12 4Zm0 3.3A4.7 4.7 0 1 1 7.3 12 4.7 4.7 0 0 1 12 7.3Zm0 2A2.7 2.7 0 1 0 14.7 12 2.7 2.7 0 0 0 12 9.3Zm5.2-2.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1Z"/></svg>
+            </a>
+            <a href="#" aria-label="Flores El Patroncito en TikTok">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.6 5.82c-1.05-.9-1.7-2.22-1.7-3.7h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V8.78c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48Z"/></svg>
+            </a>
+            <a href="https://wa.me/5215555555555" target="_blank" rel="noopener" aria-label="Flores El Patroncito en WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#nosotros" class="scroll-indicator" aria-label="Desplázate hacia abajo">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ SOBRE NOSOTROS ============ -->
+    <section class="about" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-media reveal" data-reveal>
+          <div class="about-media-frame">
+            <img src="imagenes/flores-el-patroncito-equipo.jpg" alt="Equipo de Flores El Patroncito con sus arreglos de rosas, listos para entregar" loading="lazy">
+          </div>
+          <div class="about-media-badge">
+            <span class="badge-number">100%</span>
+            <span class="badge-label">Hecho a mano<br>con cariño</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow reveal" data-reveal>Sobre Nosotros</p>
+          <h2 class="section-title reveal" data-reveal>Somos <span class="text-gold">Flores El Patroncito</span>, tu florería de confianza.</h2>
+          <p class="section-desc reveal" data-reveal>
+            Nacimos con una idea simple: que cada ramo hable con la misma franqueza con la que se hacen las cosas en el Norte. Seleccionamos flor por flor, armamos cada arreglo a mano y cuidamos cada entrega como si fuera para nuestra propia familia — sin rodeos, con carácter y palabra de honor.
+          </p>
+
+          <div class="about-pillars">
+            <div class="pillar reveal" data-reveal>
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c-3.5 4.5-7 8.6-7 12.5A7 7 0 0 0 12 22a7 7 0 0 0 7-7.5c0-3.9-3.5-8-7-12.5Zm0 17a4.5 4.5 0 0 1-4.5-4.6c.05-1.15.55-2.1 1.5-3.4-.2 2.3.9 4.1 3 4.5a.5.5 0 0 1-.15.98A4.9 4.9 0 0 1 8.5 14.9c0 .05 0 .1 0 .15A3.5 3.5 0 0 0 12 18.5a1 1 0 0 1 0 .5Z"/></svg>
+              </div>
+              <div>
+                <h3>Flores Frescas</h3>
+                <p>Trabajamos con proveedores que nos entregan flor fresca constantemente, para que cada arreglo luzca en su mejor momento.</p>
+              </div>
+            </div>
+            <div class="pillar reveal" data-reveal>
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1 15 8l7.5 1-5.5 5.2L18.5 22 12 18l-6.5 4 1.5-7.8L1.5 9 9 8Z"/></svg>
+              </div>
+              <div>
+                <h3>Diseño Artesanal</h3>
+                <p>Cada ramo se arma a mano, con atención al detalle. Ningún arreglo sale igual al anterior.</p>
+              </div>
+            </div>
+            <div class="pillar reveal" data-reveal>
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 3 6v6c0 5.1 3.6 9.3 9 10 5.4-.7 9-4.9 9-10V6l-9-4Zm-1 14-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7Z"/></svg>
+              </div>
+              <div>
+                <h3>Entrega Confiable</h3>
+                <p>Coordinamos cada entrega contigo por WhatsApp, para que tu regalo llegue en el momento exacto.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ POR QUÉ ELEGIRNOS ============ -->
+    <section class="why-us">
+      <canvas class="section-particles" data-particles aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal" data-reveal>¿Por Qué Elegirnos?</p>
+          <h2 class="section-title reveal" data-reveal>Lo que hace <span class="text-gold">especial</span> a cada entrega.</h2>
+        </div>
+
+        <div class="numbered-grid">
+          <div class="numbered-card reveal" data-reveal>
+            <span class="numbered-card-num">01</span>
+            <h3>Frescura Garantizada</h3>
+            <p>Seleccionamos cada flor pensando en que dure más y luzca mejor. Frescura de principio a fin.</p>
+          </div>
+          <div class="numbered-card reveal" data-reveal>
+            <span class="numbered-card-num">02</span>
+            <h3>Entrega Puntual, Sin Pretextos</h3>
+            <p>Pide con tiempo y recibe tu arreglo el mismo día. Si dijimos que llega, llega.</p>
+          </div>
+          <div class="numbered-card reveal" data-reveal>
+            <span class="numbered-card-num">03</span>
+            <h3>Diseño Hecho a Mano, Con Carácter</h3>
+            <p>Cada ramo se arma a mano, tallo por tallo — con el mismo orgullo con el que se hacen las cosas bien.</p>
+          </div>
+          <div class="numbered-card reveal" data-reveal>
+            <span class="numbered-card-num">04</span>
+            <h3>Atención Directa, de Frente</h3>
+            <p>Te asesoramos por WhatsApp, sin vueltas, para elegir el arreglo perfecto según la ocasión y tu presupuesto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="services" id="servicios">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal" data-reveal>Nuestro Catálogo</p>
+          <h2 class="section-title reveal" data-reveal>Flores para <span class="text-gold">cada ocasión</span> especial.</h2>
+          <p class="section-desc reveal" data-reveal>Desde un detalle sencillo hasta el arreglo más elaborado — encuentra el ramo perfecto para lo que quieres celebrar.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card reveal" data-reveal>
+            <div class="service-card-media">
+              <img src="https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=900&q=80" alt="Ramo de rosas rosas, blancas y crema en jarrón de vidrio" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3>Ramos de Rosas</h3>
+              <p>Rosas seleccionadas a mano, en combinaciones clásicas o a tu gusto. El regalo perfecto para decir "te quiero".</p>
+            </div>
+          </div>
+
+          <div class="service-card reveal" data-reveal>
+            <div class="service-card-media">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" alt="Novios sosteniendo bouquet floral de boda al aire libre" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3>Arreglos para Bodas &amp; Eventos</h3>
+              <p>Bouquets de novia y decoración floral que hacen inolvidable tu gran día, de principio a fin.</p>
+            </div>
+          </div>
+
+          <div class="service-card reveal" data-reveal>
+            <div class="service-card-media">
+              <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=900&q=80" alt="Arreglo floral en tonos durazno y blanco con listón, para regalo de cumpleaños" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3>Cumpleaños y Aniversarios</h3>
+              <p>Arreglos llenos de color para celebrar los momentos que importan, a tiempo y con estilo.</p>
+            </div>
+          </div>
+
+          <div class="service-card reveal" data-reveal>
+            <div class="service-card-media">
+              <img src="https://images.unsplash.com/photo-1533616688419-b7a585564566?auto=format&fit=crop&w=900&q=80" alt="Bouquet de temporada con tulipanes y rosas en tonos coral" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3>Bouquets de Temporada</h3>
+              <p>Combinaciones frescas con las mejores flores del momento — siempre distintas, siempre hermosas.</p>
+            </div>
+          </div>
+
+          <div class="service-card reveal" data-reveal>
+            <div class="service-card-media">
+              <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=900&q=80" alt="Rosa individual en botella de vidrio, detalle floral minimalista" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3>Detalles Florales de Regalo</h3>
+              <p>Pequeños detalles con gran significado — ideales para sorprender sin motivo, solo porque sí.</p>
+            </div>
+          </div>
+
+          <div class="service-card reveal" data-reveal>
+            <div class="service-card-media">
+              <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=900&q=80" alt="Ramo artesanal silvestre con rosas y follaje, sostenido en mano" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <h3>Ramos Artesanales Hechos a Mano</h3>
+              <p>Diseños únicos armados a mano por nuestro equipo, con dedicación en cada tallo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-cta reveal" data-reveal>
+          <p>¿No encuentras lo que buscas? Cuéntanos qué ocasión celebras y lo armamos juntos.</p>
+          <a href="https://wa.me/5215555555555?text=Hola%20Flores%20El%20Patroncito%2C%20tengo%20una%20duda%20sobre%20sus%20arreglos" target="_blank" rel="noopener" class="btn btn-primary">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BANNER PARALLAX 1 ============ -->
+    <section class="parallax-banner" data-parallax>
+      <div class="parallax-bg" style="background-image:url('https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?auto=format&fit=crop&w=1920&q=80');" data-parallax-bg></div>
+      <div class="parallax-overlay"></div>
+      <div class="container parallax-content">
+        <p class="eyebrow reveal" data-reveal>Nuestra pasión</p>
+        <h2 class="reveal" data-reveal>Cada flor cuenta <span class="text-gold">una historia.</span></h2>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO FUNCIONA ============ -->
+    <section class="process" id="proceso">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal" data-reveal>¿Cómo Funciona?</p>
+          <h2 class="section-title reveal" data-reveal>Pedir tus flores es <span class="text-gold">así de fácil.</span></h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step reveal" data-reveal>
+            <span class="process-step-num">Paso 01</span>
+            <h3>Elige tu arreglo</h3>
+            <p>Explora nuestro catálogo o cuéntanos por WhatsApp qué ocasión estás celebrando.</p>
+          </div>
+          <div class="process-connector reveal" data-reveal aria-hidden="true"></div>
+          <div class="process-step reveal" data-reveal>
+            <span class="process-step-num">Paso 02</span>
+            <h3>Personaliza tu pedido</h3>
+            <p>Elige colores, tamaño, tarjeta y fecha de entrega — nosotros nos encargamos del resto.</p>
+          </div>
+          <div class="process-connector reveal" data-reveal aria-hidden="true"></div>
+          <div class="process-step reveal" data-reveal>
+            <span class="process-step-num">Paso 03</span>
+            <h3>Recibe con una sonrisa</h3>
+            <p>Entregamos tu arreglo fresco, puntual y listo para sorprender a quien más quieres.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NÚMEROS ============ -->
+    <section class="stats">
+      <canvas class="section-particles" data-particles aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item reveal" data-reveal>
+            <span class="stat-number" data-count="500" data-suffix="+">0</span>
+            <span class="stat-label">Arreglos Entregados</span>
+          </div>
+          <div class="stat-item reveal" data-reveal>
+            <span class="stat-number" data-count="100" data-suffix="%">0</span>
+            <span class="stat-label">Flores Frescas</span>
+          </div>
+          <div class="stat-item reveal" data-reveal>
+            <span class="stat-number" data-count="24" data-suffix="h">0</span>
+            <span class="stat-label">Entrega Exprés</span>
+          </div>
+          <div class="stat-item reveal" data-reveal>
+            <span class="stat-number" data-count="5" data-suffix="★" data-decimal="1">0</span>
+            <span class="stat-label">Calificación de Clientes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BANNER PARALLAX 2 ============ -->
+    <section class="parallax-banner" data-parallax>
+      <div class="parallax-bg" style="background-image:url('https://images.unsplash.com/photo-1496062031456-07b8f162a322?auto=format&fit=crop&w=1920&q=80');" data-parallax-bg></div>
+      <div class="parallax-overlay parallax-overlay--dark"></div>
+      <div class="container parallax-content">
+        <p class="eyebrow reveal" data-reveal>Hecho con amor</p>
+        <h2 class="reveal" data-reveal>El regalo que se siente, <span class="text-gold">no solo se ve.</span></h2>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIOS ============ -->
+    <section class="testimonials" id="testimonios">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal" data-reveal>Testimonios</p>
+          <h2 class="section-title reveal" data-reveal>Lo que dicen <span class="text-gold">nuestros clientes</span></h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal" data-reveal>
+            <div class="testimonial-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p class="testimonial-text">"Pedí un ramo para el cumpleaños de mi mamá y quedó hermosísimo. Llegó justo a tiempo y superó lo que esperaba."</p>
+            <div class="testimonial-author">
+              <span class="testimonial-avatar" style="background:var(--color-primary)">M</span>
+              <span class="testimonial-name">María G.</span>
+            </div>
+          </div>
+          <div class="testimonial-card reveal" data-reveal>
+            <div class="testimonial-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p class="testimonial-text">"Encargué el arreglo para mi aniversario por WhatsApp, súper fácil y con atención muy amable. Sin duda vuelvo a pedir."</p>
+            <div class="testimonial-author">
+              <span class="testimonial-avatar" style="background:var(--color-accent-green)">R</span>
+              <span class="testimonial-name">Roberto A.</span>
+            </div>
+          </div>
+          <div class="testimonial-card reveal" data-reveal>
+            <div class="testimonial-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p class="testimonial-text">"Las flores llegaron fresquísimas y el diseño fue justo lo que pedí. Se nota el cariño en cada detalle."</p>
+            <div class="testimonial-author">
+              <span class="testimonial-avatar" style="background:var(--color-secondary)">K</span>
+              <span class="testimonial-name">Karla P.</span>
+            </div>
+          </div>
+        </div>
+        <p class="testimonials-note">* Reseñas de muestra — se recomienda sustituir por opiniones reales de clientes antes de publicar.</p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="contact" id="contacto">
+      <canvas class="section-particles" data-particles aria-hidden="true"></canvas>
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow reveal" data-reveal>Contáctanos</p>
+          <h2 class="section-title reveal" data-reveal>Pide tu <span class="text-gold">arreglo floral</span> hoy mismo</h2>
+          <p class="section-desc reveal" data-reveal>Escríbenos por WhatsApp o llena el formulario — te ayudamos a elegir el arreglo perfecto para tu ocasión.</p>
+
+          <ul class="contact-list reveal" data-reveal>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+              <span>Entrega a domicilio — escríbenos para confirmar cobertura en tu zona.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.7.1.4 0 .8-.2 1L6.6 10.8Z"/></svg>
+              <a href="https://wa.me/5215555555555" target="_blank" rel="noopener">+52 1 555 555 5555 (WhatsApp)</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12.7 2 6V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6l-10 6.7ZM4 4h16a2 2 0 0 1 2 2L12 13 2 6a2 2 0 0 1 2-2Z"/></svg>
+              <a href="mailto:hola@floreselpatroncito.com">hola@floreselpatroncito.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 11H7v2h2Zm4 0h-2v2h2Zm4 0h-2v2h2ZM19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 16H5V9h14Z"/></svg>
+              <span>Escríbenos todos los días — te respondemos por WhatsApp a la brevedad.</span>
+            </li>
+          </ul>
+
+          <div class="social-links reveal" data-reveal>
+            <a href="#" aria-label="Flores El Patroncito en Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5H16l.5-3H13.5V8.3c0-.9.3-1.5 1.6-1.5H16.6V4.2C16.3 4.2 15.3 4 14.2 4c-2.3 0-3.9 1.4-3.9 4v2.5H8v3h2.3V21Z"/></svg>
+            </a>
+            <a href="#" aria-label="Flores El Patroncito en Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c2.7 0 3.1 0 4.1.06 1.1.05 1.8.22 2.5.47.7.27 1.2.6 1.8 1.15.5.5.9 1.1 1.1 1.8.25.7.42 1.4.47 2.5.06 1 .06 1.4.06 4.1s0 3.1-.06 4.1c-.05 1.1-.22 1.8-.47 2.5-.27.7-.6 1.2-1.15 1.8a4.9 4.9 0 0 1-1.8 1.1c-.7.25-1.4.42-2.5.47-1 .06-1.4.06-4.1.06s-3.1 0-4.1-.06c-1.1-.05-1.8-.22-2.5-.47a4.9 4.9 0 0 1-1.8-1.15 4.9 4.9 0 0 1-1.1-1.8c-.25-.7-.42-1.4-.47-2.5C2 15.1 2 14.7 2 12s0-3.1.06-4.1c.05-1.1.22-1.8.47-2.5.27-.7.6-1.2 1.15-1.8.5-.5 1.1-.9 1.8-1.1.7-.25 1.4-.42 2.5-.47C8.9 2 9.3 2 12 2Zm0 2c-2.65 0-2.98 0-4.03.06-.86.04-1.33.18-1.64.3-.42.16-.72.35-1.03.66-.31.31-.5.61-.66 1.03-.12.31-.26.78-.3 1.64C4.28 9.02 4.28 9.35 4.28 12s0 2.98.06 4.03c.04.86.18 1.33.3 1.64.16.42.35.72.66 1.03.31.31.61.5 1.03.66.31.12.78.26 1.64.3 1.05.06 1.38.06 4.03.06s2.98 0 4.03-.06c.86-.04 1.33-.18 1.64-.3.42-.16.72-.35 1.03-.66.31-.31.5-.61.66-1.03.12-.31.26-.78.3-1.64.06-1.05.06-1.38.06-4.03s0-2.98-.06-4.03c-.04-.86-.18-1.33-.3-1.64a2.8 2.8 0 0 0-.66-1.03 2.8 2.8 0 0 0-1.03-.66c-.31-.12-.78-.26-1.64-.3C14.98 4 14.65 4 12 4Zm0 3.3A4.7 4.7 0 1 1 7.3 12 4.7 4.7 0 0 1 12 7.3Zm0 2A2.7 2.7 0 1 0 14.7 12 2.7 2.7 0 0 0 12 9.3Zm5.2-2.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1Z"/></svg>
+            </a>
+            <a href="#" aria-label="Flores El Patroncito en TikTok">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.6 5.82c-1.05-.9-1.7-2.22-1.7-3.7h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V8.78c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" data-reveal id="contact-form">
+          <h3>Solicita tu cotización</h3>
+          <div class="form-row">
+            <label for="f-name">Nombre</label>
+            <input type="text" id="f-name" name="name" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-row">
+            <label for="f-phone">Teléfono</label>
+            <input type="tel" id="f-phone" name="phone" placeholder="Tu número de contacto" required>
+          </div>
+          <div class="form-row">
+            <label for="f-occasion">Ocasión</label>
+            <select id="f-occasion" name="occasion">
+              <option value="Ramo de rosas">Ramo de rosas</option>
+              <option value="Boda o evento">Boda o evento</option>
+              <option value="Cumpleaños o aniversario">Cumpleaños o aniversario</option>
+              <option value="Bouquet de temporada">Bouquet de temporada</option>
+              <option value="Detalle de regalo">Detalle de regalo</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="f-date">Fecha de entrega deseada</label>
+            <input type="date" id="f-date" name="date">
+          </div>
+          <div class="form-row">
+            <label for="f-message">Mensaje</label>
+            <textarea id="f-message" name="message" rows="3" placeholder="Cuéntanos los detalles de tu pedido"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-full">
+            <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z"/></svg>
+            Enviar Pedido por WhatsApp
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="brand">
+          <svg viewBox="0 0 100 100" class="brand-mark" aria-hidden="true">
+            <circle cx="50" cy="50" r="47" class="badge-ring-fill" />
+            <circle cx="50" cy="50" r="47" fill="none" class="badge-ring-stroke" stroke-width="3" />
+            <circle cx="50" cy="50" r="39" fill="none" class="badge-ring-stroke" stroke-width="1" opacity=".5" />
+            <g class="badge-petals">
+              <path d="M50 10 L57 34 L50 40 L43 34 Z" />
+              <path d="M50 10 L57 34 L50 40 L43 34 Z" transform="rotate(60 50 50)" />
+              <path d="M50 10 L57 34 L50 40 L43 34 Z" transform="rotate(120 50 50)" />
+              <path d="M50 10 L57 34 L50 40 L43 34 Z" transform="rotate(180 50 50)" />
+              <path d="M50 10 L57 34 L50 40 L43 34 Z" transform="rotate(240 50 50)" />
+              <path d="M50 10 L57 34 L50 40 L43 34 Z" transform="rotate(300 50 50)" />
+            </g>
+            <circle cx="50" cy="50" r="8" class="badge-center" />
+          </svg>
+          <span class="brand-text">
+            <span class="brand-name">Flores <em>El Patroncito</em></span>
+            <span class="brand-tagline">Florería Artesanal · A la Norteña</span>
+          </span>
+        </a>
+        <p>Flores con carácter, hechas a mano y entregadas con palabra. Ramos y arreglos para quien no le teme a los detalles grandes.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li>Entrega a domicilio<br>Escríbenos para confirmar tu zona</li>
+          <li><a href="https://wa.me/5215555555555" target="_blank" rel="noopener">+52 1 555 555 5555</a></li>
+          <li><a href="mailto:hola@floreselpatroncito.com">hola@floreselpatroncito.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Flores El Patroncito en Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5H16l.5-3H13.5V8.3c0-.9.3-1.5 1.6-1.5H16.6V4.2C16.3 4.2 15.3 4 14.2 4c-2.3 0-3.9 1.4-3.9 4v2.5H8v3h2.3V21Z"/></svg>
+          </a>
+          <a href="#" aria-label="Flores El Patroncito en Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c2.7 0 3.1 0 4.1.06 1.1.05 1.8.22 2.5.47.7.27 1.2.6 1.8 1.15.5.5.9 1.1 1.1 1.8.25.7.42 1.4.47 2.5.06 1 .06 1.4.06 4.1s0 3.1-.06 4.1c-.05 1.1-.22 1.8-.47 2.5-.27.7-.6 1.2-1.15 1.8a4.9 4.9 0 0 1-1.8 1.1c-.7.25-1.4.42-2.5.47-1 .06-1.4.06-4.1.06s-3.1 0-4.1-.06c-1.1-.05-1.8-.22-2.5-.47a4.9 4.9 0 0 1-1.8-1.15 4.9 4.9 0 0 1-1.1-1.8c-.25-.7-.42-1.4-.47-2.5C2 15.1 2 14.7 2 12s0-3.1.06-4.1c.05-1.1.22-1.8.47-2.5.27-.7.6-1.2 1.15-1.8.5-.5 1.1-.9 1.8-1.1.7-.25 1.4-.42 2.5-.47C8.9 2 9.3 2 12 2Zm0 2c-2.65 0-2.98 0-4.03.06-.86.04-1.33.18-1.64.3-.42.16-.72.35-1.03.66-.31.31-.5.61-.66 1.03-.12.31-.26.78-.3 1.64C4.28 9.02 4.28 9.35 4.28 12s0 2.98.06 4.03c.04.86.18 1.33.3 1.64.16.42.35.72.66 1.03.31.31.61.5 1.03.66.31.12.78.26 1.64.3 1.05.06 1.38.06 4.03.06s2.98 0 4.03-.06c.86-.04 1.33-.18 1.64-.3.42-.16.72-.35 1.03-.66.31-.31.5-.61.66-1.03.12-.31.26-.78.3-1.64.06-1.05.06-1.38.06-4.03s0-2.98-.06-4.03c-.04-.86-.18-1.33-.3-1.64a2.8 2.8 0 0 0-.66-1.03 2.8 2.8 0 0 0-1.03-.66c-.31-.12-.78-.26-1.64-.3C14.98 4 14.65 4 12 4Zm0 3.3A4.7 4.7 0 1 1 7.3 12 4.7 4.7 0 0 1 12 7.3Zm0 2A2.7 2.7 0 1 0 14.7 12 2.7 2.7 0 0 0 12 9.3Zm5.2-2.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1Z"/></svg>
+          </a>
+          <a href="#" aria-label="Flores El Patroncito en TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.6 5.82c-1.05-.9-1.7-2.22-1.7-3.7h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V8.78c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Flores El Patroncito. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ WHATSAPP FLOTANTE ============ -->
+  <a href="https://wa.me/5215555555555?text=Hola%20Flores%20El%20Patroncito%2C%20me%20gustar%C3%ADa%20pedir%20un%20arreglo%20floral" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 5.75 2.38 8.07 8.07 0 0 1 2.38 5.73c0 4.48-3.65 8.12-8.14 8.12a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.12.82.83-3.04-.19-.31a8.06 8.06 0 0 1-1.24-4.31c0-4.48 3.65-8.09 8.16-8.09m-4.48 4.19c-.15 0-.4.06-.6.28-.21.23-.8.77-.8 1.89s.82 2.2.93 2.35c.11.15 1.6 2.5 3.95 3.44 1.94.79 2.35.63 2.77.6.42-.04 1.36-.55 1.55-1.09.19-.53.19-.99.13-1.09-.06-.09-.21-.15-.44-.26-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.52.11-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.96-.35-1.83-1.13-.68-.6-1.13-1.35-1.27-1.58-.13-.23-.01-.35.1-.47.11-.11.23-.27.35-.4.11-.14.15-.24.23-.4.08-.15.04-.3-.02-.42-.06-.11-.52-1.28-.72-1.74-.19-.46-.38-.4-.52-.4Z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
