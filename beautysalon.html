@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICONIC Beauty Salon | Salón de Belleza en Mazatlán — Peinados, Cortes, Maquillaje y Faciales</title>
+  <meta name="description" content="ICONIC Beauty Salon en Mazatlán. Alta peluquería, balayage, extensiones, alaciados, peinados de novia, maquillaje profesional y faciales en un solo lugar. Agenda tu cita por WhatsApp.">
+  <meta name="keywords" content="salon de belleza Mazatlán, balayage Mazatlán, extensiones de cabello, peinados de novia, alaciado keratina, maquillaje profesional, faciales Mazatlán, ICONIC Beauty Salon">
+  <meta name="author" content="ICONIC Beauty Salon">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ICONIC Beauty Salon | Peinados, Cortes, Maquillaje y Faciales">
+  <meta property="og:description" content="Alta peluquería, maquillaje y faciales en un mismo espacio. Descubre la experiencia ICONIC en Mazatlán, Sinaloa.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:image" content="assets/img/logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <link rel="apple-touch-icon" href="assets/img/logo.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ LOADING SCREEN ============ -->
+  <div id="loading-screen" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <img src="assets/img/logo.png" alt="" class="loader-logo">
+    </div>
+  </div>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="ICONIC Beauty Salon — Inicio">
+        <img src="assets/img/logo.png" alt="ICONIC Beauty Salon" class="brand-logo">
+        <span class="brand-text">
+          <span class="brand-name">ICONIC</span>
+          <span class="brand-tagline">Beauty Salon</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#galeria" class="nav-link">Galería</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <a href="https://wa.me/526691461126?text=Hola%20ICONIC%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita" target="_blank" rel="noopener" class="btn btn-primary btn-nav">Reservar Cita</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <canvas id="particles-canvas" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <p class="eyebrow reveal" data-reveal>ICONIC Beauty Salon — Mazatlán, Sinaloa</p>
+
+        <h1 class="hero-title reveal" data-reveal>
+          <span class="gradient-text">Belleza que se nota.</span><br>
+          <span class="gradient-text">Ciencia que se siente.</span>
+        </h1>
+
+        <p class="hero-typewriter reveal" data-reveal>
+          Especialistas en <span class="typewriter-word" id="typewriter"></span><span class="typewriter-cursor">|</span>
+        </p>
+
+        <p class="hero-desc reveal" data-reveal>
+          En ICONIC vivimos la belleza como un ritual — alta peluquería, maquillaje y faciales bajo un mismo estándar de excelencia, una sola dirección: la mejor versión de ti.
+        </p>
+
+        <div class="hero-cta reveal" data-reveal>
+          <a href="https://wa.me/526691461126?text=Hola%20ICONIC%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+            <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 5.75 2.38 8.07 8.07 0 0 1 2.38 5.73c0 4.48-3.65 8.12-8.14 8.12a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.12.82.83-3.04-.19-.31a8.06 8.06 0 0 1-1.24-4.31c0-4.48 3.65-8.09 8.16-8.09m-4.48 4.19c-.15 0-.4.06-.6.28-.21.23-.8.77-.8 1.89s.82 2.2.93 2.35c.11.15 1.6 2.5 3.95 3.44 1.94.79 2.35.63 2.77.6.42-.04 1.36-.55 1.55-1.09.19-.53.19-.99.13-1.09-.06-.09-.21-.15-.44-.26-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.52.11-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.96-.35-1.83-1.13-.68-.6-1.13-1.35-1.27-1.58-.13-.23-.01-.35.1-.47.11-.11.23-.27.35-.4.11-.14.15-.24.23-.4.08-.15.04-.3-.02-.42-.06-.11-.52-1.28-.72-1.74-.19-.46-.38-.4-.52-.4Z"/></svg>
+            Agendar por WhatsApp
+          </a>
+          <a href="#servicios" class="btn btn-outline btn-lg">Descubre Nuestros Servicios</a>
+        </div>
+
+        <div class="hero-social reveal" data-reveal>
+          <span class="hero-social-label">Síguenos</span>
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61590505378176" target="_blank" rel="noopener" aria-label="ICONIC en Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5H16l.5-3H13.5V8.3c0-.9.3-1.5 1.6-1.5H16.6V4.2C16.3 4.2 15.3 4 14.2 4c-2.3 0-3.9 1.4-3.9 4v2.5H8v3h2.3V21Z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/iconic_beauty_salon_and_spa/" target="_blank" rel="noopener" aria-label="ICONIC en Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c2.7 0 3.1 0 4.1.06 1.1.05 1.8.22 2.5.47.7.27 1.2.6 1.8 1.15.5.5.9 1.1 1.1 1.8.25.7.42 1.4.47 2.5.06 1 .06 1.4.06 4.1s0 3.1-.06 4.1c-.05 1.1-.22 1.8-.47 2.5-.27.7-.6 1.2-1.15 1.8a4.9 4.9 0 0 1-1.8 1.1c-.7.25-1.4.42-2.5.47-1 .06-1.4.06-4.1.06s-3.1 0-4.1-.06c-1.1-.05-1.8-.22-2.5-.47a4.9 4.9 0 0 1-1.8-1.15 4.9 4.9 0 0 1-1.1-1.8c-.25-.7-.42-1.4-.47-2.5C2 15.1 2 14.7 2 12s0-3.1.06-4.1c.05-1.1.22-1.8.47-2.5.27-.7.6-1.2 1.15-1.8.5-.5 1.1-.9 1.8-1.1.7-.25 1.4-.42 2.5-.47C8.9 2 9.3 2 12 2Zm0 2c-2.65 0-2.98 0-4.03.06-.86.04-1.33.18-1.64.3-.42.16-.72.35-1.03.66-.31.31-.5.61-.66 1.03-.12.31-.26.78-.3 1.64C4.28 9.02 4.28 9.35 4.28 12s0 2.98.06 4.03c.04.86.18 1.33.3 1.64.16.42.35.72.66 1.03.31.31.61.5 1.03.66.31.12.78.26 1.64.3 1.05.06 1.38.06 4.03.06s2.98 0 4.03-.06c.86-.04 1.33-.18 1.64-.3.42-.16.72-.35 1.03-.66.31-.31.5-.61.66-1.03.12-.31.26-.78.3-1.64.06-1.05.06-1.38.06-4.03s0-2.98-.06-4.03c-.04-.86-.18-1.33-.3-1.64a2.8 2.8 0 0 0-.66-1.03 2.8 2.8 0 0 0-1.03-.66c-.31-.12-.78-.26-1.64-.3C14.98 4 14.65 4 12 4Zm0 3.3A4.7 4.7 0 1 1 7.3 12 4.7 4.7 0 0 1 12 7.3Zm0 2A2.7 2.7 0 1 0 14.7 12 2.7 2.7 0 0 0 12 9.3Zm5.2-2.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1Z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@rosaly.lopez7" target="_blank" rel="noopener" aria-label="ICONIC en TikTok">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.6 5.82c-1.05-.9-1.7-2.22-1.7-3.7h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V8.78c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48Z"/></svg>
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Plaza+Punto+Munich+Mazatl%C3%A1n+Sinaloa" target="_blank" rel="noopener" aria-label="ICONIC en Google Maps">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#nosotros" class="scroll-indicator" aria-label="Desplázate hacia abajo">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ SOBRE NOSOTROS ============ -->
+    <section class="about" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-media reveal" data-reveal>
+          <div class="about-media-frame">
+            <img src="https://images.unsplash.com/photo-1672788725446-c303ec2b318e?auto=format&fit=crop&w=1200&q=80" alt="Estilista de ICONIC finalizando un elegante peinado de novia" loading="lazy">
+          </div>
+          <div class="about-media-badge">
+            <span class="badge-number">3</span>
+            <span class="badge-label">Especialidades<br>bajo un mismo techo</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow reveal" data-reveal>Sobre ICONIC</p>
+          <h2 class="section-title reveal" data-reveal>Tres especialidades. <span class="text-gold">Un solo estándar</span> de excelencia.</h2>
+          <p class="section-desc reveal" data-reveal>
+            ICONIC nace para ofrecerte una experiencia de belleza integral. Somos un estudio de alta peluquería, maquillaje y cuidado facial — pensado para clientas que buscan resultados impecables, con el mismo nivel de exigencia en cada servicio.
+          </p>
+
+          <div class="about-pillars">
+            <div class="pillar reveal" data-reveal>
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 3a1 1 0 0 1 .9.55L9 8h6l2.1-4.45A1 1 0 0 1 18 3a1 1 0 0 1 .9 1.45L16.6 9.2 19 14v6a1 1 0 0 1-2 0v-5.76l-2.11-4.24H9.11L7 14.24V20a1 1 0 0 1-2 0v-6l2.4-4.8L5.1 4.45A1 1 0 0 1 6 3Z"/></svg>
+              </div>
+              <div>
+                <h3>Hair Studio</h3>
+                <p>Alta peluquería, color y tratamientos capilares de la mano de estilistas certificados en las técnicas más exigentes del mercado.</p>
+              </div>
+            </div>
+            <div class="pillar reveal" data-reveal>
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1 15 8l7.5 1-5.5 5.2L18.5 22 12 18l-6.5 4 1.5-7.8L1.5 9 9 8Z"/></svg>
+              </div>
+              <div>
+                <h3>Beauty Bar</h3>
+                <p>Maquillaje profesional para novias y eventos, manicura, pedicura spa y depilación — el detalle final que completa tu imagen.</p>
+              </div>
+            </div>
+            <div class="pillar reveal" data-reveal>
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c-3.5 4.5-7 8.6-7 12.5A7 7 0 0 0 12 22a7 7 0 0 0 7-7.5c0-3.9-3.5-8-7-12.5Zm0 17a4.5 4.5 0 0 1-4.5-4.6c.05-1.15.55-2.1 1.5-3.4-.2 2.3.9 4.1 3 4.5a.5.5 0 0 1-.15.98A4.9 4.9 0 0 1 8.5 14.9c0 .05 0 .1 0 .15A3.5 3.5 0 0 0 12 18.5a1 1 0 0 1 0 .5Z"/></svg>
+              </div>
+              <div>
+                <h3>Faciales &amp; Spa</h3>
+                <p>Limpieza profunda, hidratación, antienvejecimiento, control de acné y tratamientos despigmentantes para tu piel.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="services" id="servicios">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal" data-reveal>Nuestros Servicios</p>
+          <h2 class="section-title reveal" data-reveal>Todo lo que tu belleza necesita, <span class="text-gold">en un solo lugar.</span></h2>
+          <p class="section-desc reveal" data-reveal>Tres especialidades, un mismo compromiso con la excelencia. Explora nuestro catálogo completo de servicios.</p>
+        </div>
+
+        <!-- Category 1: Hair Studio -->
+        <div class="service-category reveal" data-reveal>
+          <div class="service-cat-media">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1200&q=80" alt="Estilista de ICONIC realizando un peinado profesional" loading="lazy">
+          </div>
+          <div class="service-cat-content">
+            <span class="service-cat-tag reveal" data-reveal>01 — Hair Studio</span>
+            <h3>Alta Peluquería</h3>
+            <p class="service-cat-desc">Cortes, color y tratamientos ejecutados con precisión técnica y sensibilidad artística.</p>
+            <ul class="service-list">
+              <li>Corte de cabello profesional a la medida</li>
+              <li>Peinados de novia, XV años y eventos sociales (blower, alaciado, ondas, recogidos, alta peluquería)</li>
+              <li>Extensiones de cabello natural y clon (Tape, Micro/Nano Ring, Queratina K-Tip, Weft)</li>
+              <li>Tratamientos de hidratación, nutrición y reconstrucción capilar</li>
+              <li>Alaciados progresivos y termoactivos: keratina, taninoplastia, células madre, japonés, americano, brasileño, nanoplastia</li>
+              <li>Tintes: color global, retoque de raíz, cobertura de canas rebeldes, baños de color</li>
+              <li>Efectos de luz: balayage, ombré, babylights, mechas tradicionales, money piece, decoloración</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Category 2: Beauty Bar -->
+        <div class="service-category service-category--reverse reveal" data-reveal>
+          <div class="service-cat-media">
+            <img src="https://images.unsplash.com/photo-1523263685509-57c1d050d19b?auto=format&fit=crop&w=1200&q=80" alt="Novia luciendo maquillaje y peinado profesional de alta gama realizado en ICONIC" loading="lazy">
+          </div>
+          <div class="service-cat-content">
+            <span class="service-cat-tag reveal" data-reveal>02 — Beauty Bar</span>
+            <h3>Maquillaje &amp; Belleza Integral</h3>
+            <p class="service-cat-desc">El detalle final que completa tu imagen, de la mano a los pies.</p>
+            <ul class="service-list">
+              <li>Maquillaje profesional para novias, XV años, fotografía y eventos día/noche con técnica de visagismo</li>
+              <li>Manicura y pedicura spa: esmaltado gelish, uñas acrílicas, nail art</li>
+              <li>Depilación facial y corporal: diseño de cejas, bozo y cuerpo (cera fría/caliente, roll-on)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Category 3: Faciales -->
+        <div class="service-category reveal" data-reveal>
+          <div class="service-cat-media">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1200&q=80" alt="Tratamiento facial de limpieza profunda realizado en ICONIC" loading="lazy">
+          </div>
+          <div class="service-cat-content">
+            <span class="service-cat-tag reveal" data-reveal>03 — Spa Facial</span>
+            <h3>Faciales</h3>
+            <p class="service-cat-desc">Tratamientos diseñados para la limpieza profunda, hidratación, antienvejecimiento, control de acné o tratamientos despigmentantes.</p>
+            <ul class="service-list">
+              <li>Limpieza facial profunda con extracción y mascarilla</li>
+              <li>Hidratación intensiva con sérums y mascarillas profesionales</li>
+              <li>Tratamientos antienvejecimiento y reafirmantes</li>
+              <li>Control de acné y piel grasa</li>
+              <li>Tratamientos despigmentantes para manchas y uniformidad del tono</li>
+              <li>Exfoliación y renovación facial</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="services-cta reveal" data-reveal>
+          <p>¿No encuentras el servicio que buscas? Escríbenos y te asesoramos sin compromiso.</p>
+          <a href="https://wa.me/526691461126?text=Hola%20ICONIC%2C%20tengo%20una%20duda%20sobre%20sus%20servicios" target="_blank" rel="noopener" class="btn btn-primary">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BANNER PARALLAX 1 ============ -->
+    <section class="parallax-banner" style="background-image:url('https://images.unsplash.com/photo-1637777269327-c4d5c7944d7b?auto=format&fit=crop&w=1920&q=80');">
+      <div class="parallax-overlay"></div>
+      <div class="container parallax-content">
+        <p class="eyebrow reveal" data-reveal>Nuestra filosofía</p>
+        <h2 class="reveal" data-reveal>El detalle es nuestro lenguaje.</h2>
+      </div>
+    </section>
+
+    <!-- ============ POR QUÉ ICONIC ============ -->
+    <section class="why-us">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal" data-reveal>¿Por qué ICONIC?</p>
+          <h2 class="section-title reveal" data-reveal>La experiencia <span class="text-gold">premium</span> que Mazatlán merecía.</h2>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card reveal" data-reveal>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1 15 8l7.5 1-5.5 5.2L18.5 22 12 18l-6.5 4 1.5-7.8L1.5 9 9 8Z"/></svg>
+            </div>
+            <h3>Instalaciones de alta gama</h3>
+            <p>Un espacio diseñado para que cada visita se sienta como un ritual, no como un trámite.</p>
+          </div>
+          <div class="feature-card reveal" data-reveal>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 3 6v6c0 5.1 3.6 9.3 9 10 5.4-.7 9-4.9 9-10V6l-9-4Zm-1 14-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7Z"/></svg>
+            </div>
+            <h3>Productos profesionales premium</h3>
+            <p>Solo trabajamos con líneas certificadas de grado profesional, seguras y de máximo desempeño.</p>
+          </div>
+          <div class="feature-card reveal" data-reveal>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.4 0-8 2.2-8 5v2h16v-2c0-2.8-3.6-5-8-5Z"/></svg>
+            </div>
+            <h3>Equipo certificado</h3>
+            <p>Estilistas y especialistas en belleza con formación continua en las técnicas más recientes.</p>
+          </div>
+          <div class="feature-card reveal" data-reveal>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 21s-7.5-4.6-10-9.1C.4 8.5 2 5 5.6 5c2 0 3.4 1 4.4 2.5C11 6 12.4 5 14.4 5 18 5 19.6 8.5 22 11.9 19.5 16.4 12 21 12 21Z"/></svg>
+            </div>
+            <h3>Enfoque personalizado</h3>
+            <p>Cada tratamiento parte de un diagnóstico a tu piel, tu cabello y tus objetivos — no de un catálogo genérico.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BANNER PARALLAX 2 ============ -->
+    <section class="parallax-banner" style="background-image:url('https://images.unsplash.com/photo-1722805740076-7c51a8669afc?auto=format&fit=crop&w=1920&q=80');">
+      <div class="parallax-overlay"></div>
+      <div class="container parallax-content">
+        <p class="eyebrow reveal" data-reveal>Novias ICONIC</p>
+        <h2 class="reveal" data-reveal>El día más importante, con el look perfecto.</h2>
+      </div>
+    </section>
+
+    <!-- ============ GALERÍA ============ -->
+    <section class="gallery" id="galeria">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal" data-reveal>Galería</p>
+          <h2 class="section-title reveal" data-reveal>Momentos <span class="text-gold">ICONIC</span></h2>
+          <p class="section-desc reveal" data-reveal>Un vistazo a nuestro trabajo, nuestro espacio y nuestra manera de entender la belleza.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item reveal" data-reveal>
+            <img src="https://images.unsplash.com/photo-1554519934-e32b1629d9ee?auto=format&fit=crop&w=900&q=80" alt="Transformación de color con técnica balayage en ICONIC" loading="lazy">
+          </div>
+          <div class="gallery-item reveal" data-reveal>
+            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=900&q=80" alt="Set de maquillaje profesional de alta gama utilizado en ICONIC" loading="lazy">
+          </div>
+          <div class="gallery-item reveal" data-reveal>
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80" alt="Manicura de esmaltado gelish con diseño de nail art en ICONIC" loading="lazy">
+          </div>
+          <div class="gallery-item reveal" data-reveal>
+            <img src="https://images.unsplash.com/photo-1605980766335-d3a41c7332a1?auto=format&fit=crop&w=900&q=80" alt="Ondas y efectos de color en cabello realizados en ICONIC" loading="lazy">
+          </div>
+          <div class="gallery-item reveal" data-reveal>
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Melena con volumen y extensiones de cabello natural en ICONIC" loading="lazy">
+          </div>
+          <div class="gallery-item reveal" data-reveal>
+            <img src="https://images.unsplash.com/photo-1587729927069-ef3b7a5ab9b4?auto=format&fit=crop&w=900&q=80" alt="Detalle de manicura spa con acabado nude en ICONIC" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="contact" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow reveal" data-reveal>Visítanos</p>
+          <h2 class="section-title reveal" data-reveal>Reserva tu <span class="text-gold">experiencia ICONIC</span></h2>
+          <p class="section-desc reveal" data-reveal>Estamos en el corazón de Mazatlán, listos para recibirte. Agenda por WhatsApp y con gusto te ayudamos a elegir el servicio ideal para ti.</p>
+
+          <ul class="contact-list reveal" data-reveal>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+              <span>Av. Munich 1911, Col. Jaripillo — Plaza Punto Munich, Local 37, Mazatlán, Sinaloa
+                <br><a href="https://www.google.com/maps/search/?api=1&query=Plaza+Punto+Munich+Mazatl%C3%A1n+Sinaloa" target="_blank" rel="noopener" class="map-link">Cómo llegar (Google Maps)</a>
+              </span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.7.1.4 0 .8-.2 1L6.6 10.8Z"/></svg>
+              <a href="https://wa.me/526691461126" target="_blank" rel="noopener">+52 669 146 1126 (WhatsApp)</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12.7 2 6V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6l-10 6.7ZM4 4h16a2 2 0 0 1 2 2L12 13 2 6a2 2 0 0 1 2-2Z"/></svg>
+              <span>Lunes a Sábado — Citas con previa reservación</span>
+            </li>
+          </ul>
+
+          <div class="social-links reveal" data-reveal>
+            <a href="https://www.facebook.com/profile.php?id=61590505378176" target="_blank" rel="noopener" aria-label="ICONIC en Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5H16l.5-3H13.5V8.3c0-.9.3-1.5 1.6-1.5H16.6V4.2C16.3 4.2 15.3 4 14.2 4c-2.3 0-3.9 1.4-3.9 4v2.5H8v3h2.3V21Z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/iconic_beauty_salon_and_spa/" target="_blank" rel="noopener" aria-label="ICONIC en Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c2.7 0 3.1 0 4.1.06 1.1.05 1.8.22 2.5.47.7.27 1.2.6 1.8 1.15.5.5.9 1.1 1.1 1.8.25.7.42 1.4.47 2.5.06 1 .06 1.4.06 4.1s0 3.1-.06 4.1c-.05 1.1-.22 1.8-.47 2.5-.27.7-.6 1.2-1.15 1.8a4.9 4.9 0 0 1-1.8 1.1c-.7.25-1.4.42-2.5.47-1 .06-1.4.06-4.1.06s-3.1 0-4.1-.06c-1.1-.05-1.8-.22-2.5-.47a4.9 4.9 0 0 1-1.8-1.15 4.9 4.9 0 0 1-1.1-1.8c-.25-.7-.42-1.4-.47-2.5C2 15.1 2 14.7 2 12s0-3.1.06-4.1c.05-1.1.22-1.8.47-2.5.27-.7.6-1.2 1.15-1.8.5-.5 1.1-.9 1.8-1.1.7-.25 1.4-.42 2.5-.47C8.9 2 9.3 2 12 2Zm0 2c-2.65 0-2.98 0-4.03.06-.86.04-1.33.18-1.64.3-.42.16-.72.35-1.03.66-.31.31-.5.61-.66 1.03-.12.31-.26.78-.3 1.64C4.28 9.02 4.28 9.35 4.28 12s0 2.98.06 4.03c.04.86.18 1.33.3 1.64.16.42.35.72.66 1.03.31.31.61.5 1.03.66.31.12.78.26 1.64.3 1.05.06 1.38.06 4.03.06s2.98 0 4.03-.06c.86-.04 1.33-.18 1.64-.3.42-.16.72-.35 1.03-.66.31-.31.5-.61.66-1.03.12-.31.26-.78.3-1.64.06-1.05.06-1.38.06-4.03s0-2.98-.06-4.03c-.04-.86-.18-1.33-.3-1.64a2.8 2.8 0 0 0-.66-1.03 2.8 2.8 0 0 0-1.03-.66c-.31-.12-.78-.26-1.64-.3C14.98 4 14.65 4 12 4Zm0 3.3A4.7 4.7 0 1 1 7.3 12 4.7 4.7 0 0 1 12 7.3Zm0 2A2.7 2.7 0 1 0 14.7 12 2.7 2.7 0 0 0 12 9.3Zm5.2-2.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1Z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@rosaly.lopez7" target="_blank" rel="noopener" aria-label="ICONIC en TikTok">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.6 5.82c-1.05-.9-1.7-2.22-1.7-3.7h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V8.78c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-map reveal" data-reveal>
+          <iframe
+            title="Ubicación de ICONIC Beauty Salon en Mazatlán"
+            src="https://www.google.com/maps?q=Plaza%20Punto%20Munich%2C%20Av.%20Munich%201911%2C%20Jaripillo%2C%20Mazatl%C3%A1n%2C%20Sin.&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="brand">
+          <img src="assets/img/logo.png" alt="ICONIC Beauty Salon" class="brand-logo">
+          <span class="brand-text">
+            <span class="brand-name">ICONIC</span>
+            <span class="brand-tagline">Beauty Salon</span>
+          </span>
+        </a>
+        <p>Alta peluquería, maquillaje y faciales en un mismo espacio, en el corazón de Mazatlán.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li>Av. Munich 1911, Local 37<br>Col. Jaripillo, Mazatlán, Sin.</li>
+          <li><a href="https://wa.me/526691461126" target="_blank" rel="noopener">+52 669 146 1126</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61590505378176" target="_blank" rel="noopener" aria-label="ICONIC en Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5H16l.5-3H13.5V8.3c0-.9.3-1.5 1.6-1.5H16.6V4.2C16.3 4.2 15.3 4 14.2 4c-2.3 0-3.9 1.4-3.9 4v2.5H8v3h2.3V21Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/iconic_beauty_salon_and_spa/" target="_blank" rel="noopener" aria-label="ICONIC en Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c2.7 0 3.1 0 4.1.06 1.1.05 1.8.22 2.5.47.7.27 1.2.6 1.8 1.15.5.5.9 1.1 1.1 1.8.25.7.42 1.4.47 2.5.06 1 .06 1.4.06 4.1s0 3.1-.06 4.1c-.05 1.1-.22 1.8-.47 2.5-.27.7-.6 1.2-1.15 1.8a4.9 4.9 0 0 1-1.8 1.1c-.7.25-1.4.42-2.5.47-1 .06-1.4.06-4.1.06s-3.1 0-4.1-.06c-1.1-.05-1.8-.22-2.5-.47a4.9 4.9 0 0 1-1.8-1.15 4.9 4.9 0 0 1-1.1-1.8c-.25-.7-.42-1.4-.47-2.5C2 15.1 2 14.7 2 12s0-3.1.06-4.1c.05-1.1.22-1.8.47-2.5.27-.7.6-1.2 1.15-1.8.5-.5 1.1-.9 1.8-1.1.7-.25 1.4-.42 2.5-.47C8.9 2 9.3 2 12 2Zm0 2c-2.65 0-2.98 0-4.03.06-.86.04-1.33.18-1.64.3-.42.16-.72.35-1.03.66-.31.31-.5.61-.66 1.03-.12.31-.26.78-.3 1.64C4.28 9.02 4.28 9.35 4.28 12s0 2.98.06 4.03c.04.86.18 1.33.3 1.64.16.42.35.72.66 1.03.31.31.61.5 1.03.66.31.12.78.26 1.64.3 1.05.06 1.38.06 4.03.06s2.98 0 4.03-.06c.86-.04 1.33-.18 1.64-.3.42-.16.72-.35 1.03-.66.31-.31.5-.61.66-1.03.12-.31.26-.78.3-1.64.06-1.05.06-1.38.06-4.03s0-2.98-.06-4.03c-.04-.86-.18-1.33-.3-1.64a2.8 2.8 0 0 0-.66-1.03 2.8 2.8 0 0 0-1.03-.66c-.31-.12-.78-.26-1.64-.3C14.98 4 14.65 4 12 4Zm0 3.3A4.7 4.7 0 1 1 7.3 12 4.7 4.7 0 0 1 12 7.3Zm0 2A2.7 2.7 0 1 0 14.7 12 2.7 2.7 0 0 0 12 9.3Zm5.2-2.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1Z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@rosaly.lopez7" target="_blank" rel="noopener" aria-label="ICONIC en TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.6 5.82c-1.05-.9-1.7-2.22-1.7-3.7h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V8.78c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> ICONIC Beauty Salon. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ WHATSAPP FLOTANTE ============ -->
+  <a href="https://wa.me/526691461126?text=Hola%20ICONIC%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 5.75 2.38 8.07 8.07 0 0 1 2.38 5.73c0 4.48-3.65 8.12-8.14 8.12a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.12.82.83-3.04-.19-.31a8.06 8.06 0 0 1-1.24-4.31c0-4.48 3.65-8.09 8.16-8.09m-4.48 4.19c-.15 0-.4.06-.6.28-.21.23-.8.77-.8 1.89s.82 2.2.93 2.35c.11.15 1.6 2.5 3.95 3.44 1.94.79 2.35.63 2.77.6.42-.04 1.36-.55 1.55-1.09.19-.53.19-.99.13-1.09-.06-.09-.21-.15-.44-.26-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.52.11-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.96-.35-1.83-1.13-.68-.6-1.13-1.35-1.27-1.58-.13-.23-.01-.35.1-.47.11-.11.23-.27.35-.4.11-.14.15-.24.23-.4.08-.15.04-.3-.02-.42-.06-.11-.52-1.28-.72-1.74-.19-.46-.38-.4-.52-.4Z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
