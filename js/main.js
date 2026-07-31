@@ -1,5 +1,5 @@
 /* ============================================================
-   FLORES EL PATRONCITO — main.js
+   FLORES EL VIEJÓN — main.js
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -312,7 +312,7 @@ function initWhatsappForm() {
     const date = form.date.value;
     const message = form.message.value.trim();
 
-    let text = `Hola Flores El Patroncito, quisiera solicitar una cotización.\n`;
+    let text = `Hola Flores El Viejón, quisiera solicitar una cotización.\n`;
     text += `Nombre: ${name}\n`;
     text += `Teléfono: ${phone}\n`;
     text += `Ocasión: ${occasion}\n`;

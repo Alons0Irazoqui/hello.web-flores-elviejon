@@ -1,9 +1,9 @@
 /* ============================================================
-   FLORES EL PATRONCITO — Design System
+   FLORES EL VIEJÓN — Design System
    ============================================================ */
 
 :root {
-  /* Brand palette — norteño / denim-and-gold, anchored to the real Flores El Patroncito logo */
+  /* Brand palette — norteño / denim-and-gold, anchored to the real Flores El Viejón logo */
   --color-primary: #2E4F73;
   --color-primary-dark: #16273A;
   --color-primary-light: #5E85AC;
@@ -322,6 +322,16 @@ html.loaded #loading-screen { transition: visibility 0s 1.15s; visibility: hidde
   filter: drop-shadow(0 6px 14px rgba(22,39,58,.35));
 }
 .brand:hover .brand-mark { transform: rotate(8deg) scale(1.06); }
+
+.brand-logo-img {
+  height: clamp(38px, 3.4vw, 48px);
+  width: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+  transition: transform .5s var(--ease-out);
+  filter: drop-shadow(0 6px 14px rgba(22,39,58,.35));
+}
+.brand:hover .brand-logo-img { transform: scale(1.05); }
 
 /* Badge / emblem mark — shared by header, footer & preloader */
 .badge-ring-fill { fill: var(--color-primary); }
