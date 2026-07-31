@@ -737,6 +737,124 @@ html.loaded #loading-screen { transition: visibility 0s 1.15s; visibility: hidde
 .services-cta p { font-family: var(--font-serif); font-size: 1.3rem; font-style: italic; color: var(--color-text); max-width: 520px; }
 
 /* ============================================================
+   GALLERY
+   ============================================================ */
+
+.gallery { padding: 130px 0; background: var(--color-bg-alt); }
+
+.gallery-group { margin-bottom: 56px; }
+.gallery-group:last-child { margin-bottom: 0; }
+
+.gallery-group-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 26px; }
+.gallery-group-title { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--color-text); }
+.gallery-group-desc { font-size: .88rem; color: var(--color-text-light); }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 4/5;
+  box-shadow: 0 4px 24px -10px rgba(22,39,58,.18);
+  transition: transform .5s var(--ease-out), box-shadow .5s var(--ease-out);
+}
+.gallery-item:hover { transform: translateY(-6px); box-shadow: var(--shadow-strong); }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s var(--ease-out); }
+.gallery-item:hover img { transform: scale(1.08); }
+
+.gallery-item-caption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 20px 16px 14px;
+  background: linear-gradient(180deg, rgba(23,35,47,0) 0%, rgba(23,35,47,.78) 100%);
+  color: var(--color-white);
+  font-size: .82rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .4s ease, transform .4s ease;
+}
+.gallery-item:hover .gallery-item-caption { opacity: 1; transform: translateY(0); }
+
+/* ============================================================
+   PAQUETES / PRICING
+   ============================================================ */
+
+.packages { padding: 130px 0; }
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+  align-items: stretch;
+}
+
+.package-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 38px 28px 32px;
+  border: 1px solid rgba(46,79,115,.08);
+  box-shadow: 0 4px 24px -10px rgba(22,39,58,.15);
+  transition: transform .5s var(--ease-out), box-shadow .5s var(--ease-out);
+}
+.package-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-strong); }
+
+.package-card--featured {
+  background: var(--color-bg-dark);
+  border-color: transparent;
+  transform: scale(1.04);
+}
+.package-card--featured:hover { transform: scale(1.04) translateY(-10px); }
+
+.package-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gradient-brand);
+  color: var(--color-white);
+  font-family: var(--font-western);
+  font-size: .78rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 7px 20px;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-gold);
+  white-space: nowrap;
+}
+
+.package-name { font-family: var(--font-western); letter-spacing: .06em; text-transform: uppercase; font-size: 1rem; color: var(--color-secondary-dark); margin-bottom: 6px; }
+.package-card--featured .package-name { color: var(--color-secondary-light); }
+
+.package-price { font-family: var(--font-display); font-weight: 800; font-size: 2.4rem; color: var(--color-text); line-height: 1; margin-bottom: 4px; }
+.package-card--featured .package-price { color: var(--color-white); }
+.package-price sup { font-size: 1rem; font-weight: 600; margin-right: 2px; }
+.package-price span { font-size: .9rem; font-weight: 500; opacity: .6; }
+
+.package-highlight { font-size: .88rem; color: var(--color-text-light); margin-bottom: 22px; }
+.package-card--featured .package-highlight { color: rgba(255,255,255,.65); }
+
+.package-features { display: flex; flex-direction: column; gap: 13px; margin-bottom: 28px; flex-grow: 1; }
+.package-features li { display: flex; align-items: flex-start; gap: 10px; font-size: .9rem; color: var(--color-text); }
+.package-card--featured .package-features li { color: rgba(255,255,255,.9); }
+.package-features li svg { width: 18px; height: 18px; flex-shrink: 0; margin-top: 1px; color: var(--color-primary); }
+.package-card--featured .package-features li svg { color: var(--color-secondary-light); }
+
+.package-card .btn { width: 100%; }
+.package-card--featured .btn-outline { border-color: rgba(255,255,255,.3); color: var(--color-white); }
+.package-card--featured .btn-outline:hover { border-color: var(--color-secondary-light); color: var(--color-secondary-light); }
+
+.packages-note { text-align: center; margin-top: 36px; font-size: .85rem; color: var(--color-text-light); }
+
+/* ============================================================
    PARALLAX BANNERS
    ============================================================ */
 
@@ -1022,6 +1140,10 @@ html.loaded #loading-screen { transition: visibility 0s 1.15s; visibility: hidde
   .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-grid { grid-template-columns: 1fr; gap: 50px; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+  .packages-grid { grid-template-columns: repeat(2, 1fr); gap: 30px 26px; }
+  .package-card--featured { transform: none; }
+  .package-card--featured:hover { transform: translateY(-10px); }
 }
 
 @media (max-width: 900px) {
@@ -1046,9 +1168,14 @@ html.loaded #loading-screen { transition: visibility 0s 1.15s; visibility: hidde
   .hero-cta .btn { width: 100%; }
   .hero-trust { gap: 12px; }
   .about { padding: 90px 0; }
-  .why-us, .services, .process, .testimonials, .contact { padding: 90px 0; }
+  .why-us, .services, .process, .testimonials, .contact, .gallery, .packages { padding: 90px 0; }
   .numbered-grid, .services-grid, .testimonials-grid { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 36px; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .gallery-group-head { flex-direction: column; gap: 4px; }
+  .packages-grid { grid-template-columns: 1fr; }
+  .package-card--featured { transform: none; }
+  .package-card--featured:hover { transform: translateY(-10px); }
   .footer-grid { grid-template-columns: 1fr; gap: 36px; text-align: left; }
   .about-media-badge { right: 50%; transform: translateX(120px); padding: 18px 20px; }
   .contact-form { padding: 30px 24px; }
